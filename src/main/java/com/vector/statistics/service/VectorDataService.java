@@ -1,4 +1,4 @@
-package com.vector.statistics.sevice;
+package com.vector.statistics.service;
 
 import com.vector.statistics.dto.ServiceResponse;
 import com.vector.statistics.dto.VectorDTO;

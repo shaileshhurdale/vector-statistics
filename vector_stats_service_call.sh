@@ -1,6 +1,6 @@
 #!/usr/bin/bash
 
-base_url="http://localhost:8080/vector-statistics/"
+base_url="http://localhost:8080/vector-statistics//vector/stats/"
 echo "Please enter vector-id:"
 read vector_id
 resource_url="${base_url}${vector_id}"

@@ -11,24 +11,34 @@ import javax.persistence.Table;
 
 import lombok.Data;
 
+/**
+ * VectorElement is a entity class associated with vector_element table
+ * elementId is acting as a primary key for this entity
+ * 
+ * vector element and vector shares many to one relationship with each other
+ * 
+ * @author Shailesh Hurdale
+ *
+ */
+
 @Entity
 @Table(name = "vector_element")
 @Data
 public class VectorElement {
-	
+
 	@Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	@Column(name = "element_id")
-    private Integer elementId;
+	private Integer elementId;
 
-    @ManyToOne
-    @JoinColumn(name = "vector_id")
-    private Vector vector;
+	@ManyToOne
+	@JoinColumn(name = "vector_id")
+	private Vector vector;
 
-    @Column(name = "element_index")
-    private int elementIndex;
+	@Column(name = "element_index")
+	private int elementIndex;
 
-    @Column(name = "element_value")
-    private int elementValue;
+	@Column(name = "element_value")
+	private int elementValue;
 
 }
