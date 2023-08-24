@@ -18,7 +18,6 @@ import springfox.documentation.spring.web.plugins.Docket;
  * @author Shailesh Hurdale
  *
  */
-
 @Configuration
 public class SwaggerConfig {
 
