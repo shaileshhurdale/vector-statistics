@@ -83,13 +83,13 @@ public class VectorDataServiceImplTest {
 	public void retrieveVectorStatsHappyPath() {
 		Mockito.when(vectorRepository.findById(1)).thenReturn(Optional.of(vectorEntity));
 		Mockito.when(vectorStatisticsService.calculateVectorMean(Mockito.any())).thenReturn(6.5);
-		Mockito.when(vectorStatisticsService.calculateVectorStandardDeviation(Mockito.any())).thenReturn(15.6);
+		Mockito.when(vectorStatisticsService.calculateVectorStandardDeviation(Mockito.any())).thenReturn(1.5);
 		ServiceResponse<VectorStatistics> vectorStatisticResponse = VectorDataService.retrieveVectorStats(1);
 		Assertions.assertNotNull(vectorStatisticResponse);
 		final VectorStatistics vectorStatistics = vectorStatisticResponse.getPayload();
 		Assertions.assertNotNull(vectorStatistics);
 		Assertions.assertEquals(6.5, vectorStatistics.getMeanValue());
-		Assertions.assertEquals(15.6, vectorStatistics.getStandardDeviation());
+		Assertions.assertEquals(1.5, vectorStatistics.getStandardDeviation());
 		Assertions.assertNull(vectorStatisticResponse.getErrorMsgs());
 	}
 	
