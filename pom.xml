@@ -83,6 +83,14 @@
 				<groupId>org.jacoco</groupId>
 				<artifactId>jacoco-maven-plugin</artifactId>
 				<version>0.8.7</version> <!-- JaCoCo version -->
+				<configuration>
+					<excludes>
+						<exclude>com/vector/statistics/config/**</exclude>
+						<exclude>com/vector/statistics/VectorStatisticsApplication.class</exclude>
+						<exclude>com/vector/statistics/exception/**</exclude>
+						<exclude>com/vector/statistics/repository/**</exclude>
+					</excludes>
+				</configuration>
 				<executions>
 					<execution>
 						<goals>

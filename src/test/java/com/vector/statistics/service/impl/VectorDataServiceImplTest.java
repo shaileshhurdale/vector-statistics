@@ -56,6 +56,7 @@ public class VectorDataServiceImplTest {
 
 	@AfterAll
 	static void tearDownClass() {
+		vectorEntity=null;
 	}
 
 	/**

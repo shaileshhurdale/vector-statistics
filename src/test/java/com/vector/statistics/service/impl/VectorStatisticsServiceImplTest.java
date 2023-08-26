@@ -49,6 +49,8 @@ public class VectorStatisticsServiceImplTest {
 
 	@AfterAll
 	static void tearDownClass() {
+		vectorDto=null;
+		emptyVectorDto=null;
 	}
 
 	/**
