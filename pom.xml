@@ -89,6 +89,7 @@
 						<exclude>com/vector/statistics/VectorStatisticsApplication.class</exclude>
 						<exclude>com/vector/statistics/exception/**</exclude>
 						<exclude>com/vector/statistics/repository/**</exclude>
+						<exclude>com/vector/statistics/entity/**</exclude>
 					</excludes>
 				</configuration>
 				<executions>
